@@ -4,7 +4,8 @@ import Roulette from '../components/Roulette'
 
 const mapStateToProps = (state) => ({ 
     bet: state.bet,
-    totalMoney: state.found
+    totalMoney: state.found,
+    user: state.user.userAccount
  });
 
 const mapDispatchToProps = (dispatch) => ({

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SpendMoneyBtn from './SpendMoneyBtn'
+import utils from '../utils/utils'
 
 export default class SlotMachine extends Component {
     constructor(props) {
@@ -41,6 +42,10 @@ export default class SlotMachine extends Component {
     }
 
     render() {
+        if (this.props.user == "") {
+            utils.toLoginPage();
+        }
+
         return (
             <div>
                 <h1>This is Slot Machine game</h1>
@@ -54,7 +59,7 @@ export default class SlotMachine extends Component {
                     onClick={this.props.onClick}
                     placeBet={this.props.placeBet}
                     additionalAction={() => this.pull()}
-                    oldBet={this.props.bet}/>
+                    oldBet={this.props.bet} />
             </div>
         )
     }

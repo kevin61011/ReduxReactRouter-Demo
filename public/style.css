@@ -64,13 +64,13 @@ header {
 }
 
 .main-game-block {
-    width: 70%;
+    width: 69%;
     position: relative;
     float: left;
 }
 
 .my-favorite-block {
-    width: 30%;
+    width: 29%;
     position: relative;
     float: left;
 }
@@ -79,8 +79,28 @@ header {
     margin-left: 5px;
 }
 
+.my-favorite-wrap .title-block{
+    margin-bottom: 10px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.login-wrap {
+    text-align: center;
+}
+
+.login-wrap .login-btn {
+    margin-top: 50px;
+}
+
+.main-game-block {
+    border-right: 1px solid #000;
+}
+
+.btn.btn-spend-money {
+    margin-left: 5px;
 }

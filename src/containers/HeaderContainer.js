@@ -1,10 +1,16 @@
 import { connect } from 'react-redux'
-import { addMoney } from '../actions'
+import { addMoney, logout } from '../actions'
 import Header from '../components/Header'
 
-const mapStateToProps = (state) => ({ totalMoney: state.found });
+const mapStateToProps = (state) => ({
+    user: state.user.userAccount,
+    totalMoney: state.found
+});
 
-const mapDispatchToProps = (dispatch) => ({ onClick: (value) => dispatch(addMoney(value)) })
+const mapDispatchToProps = (dispatch) => ({
+    addMoney: (value) => dispatch(addMoney(value)),
+    logout: () => dispatch(logout())
+})
 
 export default connect(
     mapStateToProps,

@@ -22,3 +22,13 @@ export const addedToMyFavorite = game => ({
   type: "ADDED_TO_MY_FAVORITE",
   game
 });
+
+export const login = (account, password) => ({
+  type: "LOGIN",
+  account,
+  password
+})
+
+export const logout = () => ({
+  type: "LOGOUT",
+})

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SpendMoneyBtn from './SpendMoneyBtn'
+import utils from '../utils/utils'
 
 export default class SlotMachine extends Component {
     constructor(props) {
@@ -77,6 +78,11 @@ export default class SlotMachine extends Component {
     }
 
     render() {
+
+        if (this.props.user == "") {
+            utils.toLoginPage();
+        }
+
         let board = [];
         for (let i = 0; i < this.rouletteData.length; i++) {
             board.push(

@@ -46,6 +46,12 @@ export default class SpendMoneyBtn extends Component {
         })
     }
 
+    componentDidUpdate() {
+        if(parseInt(this.state.bet) > parseInt(this.props.totalMoney)){
+            this.clearBet();
+        }
+    }
+
     render() {
         return (
             <div>
