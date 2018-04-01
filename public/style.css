@@ -1,0 +1,86 @@
+#root {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+.slotMachine {
+    margin: 10px;
+}
+
+.slotMachine .slot {
+    width: 20px;
+    padding: 5px;
+    border: 1px solid #000;
+    margin-left: 1px
+}
+
+.game-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.game-btn button:nth-child(1) {
+    margin: 0px
+}
+
+.game-btn button {
+    margin-left: 5px;
+}
+
+.game-content {
+    margin-top: 20px;
+}
+.btn.btn-spend-money{
+    margin-top: 50px;
+}
+
+.roulette .slot{
+    display: inline-block;
+    text-align: center;
+}
+
+.roulette .slot.active{
+    border: 5px solid #4b0082
+}
+
+.roulette .slot .label{
+    width:20px;
+    padding: 5px;
+    text-align: center;
+    color: #FFF;
+}
+
+.my-favorite-wrap {
+    padding: 5px;
+}
+
+.my-favorite-wrap .my-favorite-edit .edit-btn, .my-favorite-wrap .my-favorite .favorite-btn {
+    display: block;
+    margin-top: 5px;
+}
+
+.main-game-block {
+    width: 70%;
+    position: relative;
+    float: left;
+}
+
+.my-favorite-block {
+    width: 30%;
+    position: relative;
+    float: left;
+}
+
+.my-favorite-wrap .title-block button {
+    margin-left: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
